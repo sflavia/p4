@@ -24,10 +24,10 @@ class CreateEventsTable extends Migration
 
           # The rest of the fields...
           $table->string('title');
-          $table->string('description');
+          $table->longtext('description');
           $table->date('date');
           $table->time('time');
-          $table->string('organizer');
+        #  $table->string('user_id');
 
           # FYI: We're skipping the 'tags' field for now; more on that later.
 

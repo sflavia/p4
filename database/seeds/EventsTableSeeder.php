@@ -6,6 +6,7 @@ class EventsTableSeeder extends Seeder
 {
   public function run()
   {
+      $user_id = \App\User::where('name','=','Jill')->pluck('id')->first();
       DB::table('events')->insert([
           'created_at' => Carbon\Carbon::now()->toDateTimeString(),
           'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
@@ -13,9 +14,9 @@ class EventsTableSeeder extends Seeder
           'description' => 'Roc participates in the yearly street cleaning event as part of Boston Shine',
           'date' => 20160525,
           'time' => '080000',
-  	      'organizer' => 'Suzette Lavia',
+  	      'user_id' => $user_id,
    	]);
-
+    $user_id = \App\User::where('name','=','Jill')->pluck('id')->first();
       DB::table('events')->insert([
           'created_at' => Carbon\Carbon::now()->toDateTimeString(),
           'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
@@ -23,10 +24,10 @@ class EventsTableSeeder extends Seeder
           'description' => 'Roc meets every thursday to help forster community engagements',
           'date' => 20160625,
           'time' => '180000',
-  	      'organizer' => 'Sally Gates',
+  	      'user_id' => $user_id,
 
       ]);
-
+      $user_id = \App\User::where('name','=','Jill')->pluck('id')->first();
       DB::table('events')->insert([
           'created_at' => Carbon\Carbon::now()->toDateTimeString(),
           'updated_at' => Carbon\Carbon::now()->toDateTimeString(),
@@ -34,7 +35,7 @@ class EventsTableSeeder extends Seeder
           'description' => 'Every summer ROC holds a community festival, bringing vendors and artist from within the Community',
           'date' => 20160925,
           'time' => '120000',
-  	      'organizer' => 'Chris Davis',
+  	      'user_id' => $user_id,
       ]);
   }
 }
