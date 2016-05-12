@@ -44,7 +44,7 @@ class EventController extends Controller {
          		// Add new tags to Tag table
 
 
-        		return redirect('/');
+        		return redirect('/events');
 
 
 

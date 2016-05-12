@@ -16,5 +16,5 @@ click on the link to create your event
 <br><br><br>
 <a href="/create">create your event<a> <br><br>
 
-  <a href="/index">logout<a>
+  
 @stop

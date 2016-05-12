@@ -64,9 +64,16 @@
   <div class="row content">
     <div class="col-sm-2 sidenav">
 
+      @if(Auth::check())
+      <li class='nav'><a href='/'>Home</a></li>
+      <li class='nav'><a href='/logout'>Logout</a></li>
+      @else
       <li class='nav'><a href='/'>Home</a></li>
       <li class='nav'><a href='/login'>Login</a></li>
       <li class='nav'><a href='/register'>Register</a></li>
+      @endif
+
+
     </div>
     <div class="col-sm-8 text-left">
 
@@ -81,18 +88,13 @@
 
     </div>
     <div class="col-sm-2 sidenav">
-      <div class="well">
-        <p>ADS</p>
-      </div>
-      <div class="well">
-        <p>ADS</p>
       </div>
     </div>
   </div>
 </div>
 
 <footer class="container-fluid text-center">
-  <p>Footer Text</p>
+  <p>ROC 2016</p>
 </footer>
 
 </body>

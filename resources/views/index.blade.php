@@ -13,7 +13,7 @@
 
     The people who attended continued to meet and decided to form an official group, creating the name Redefining Our Community.
     The meetings became the planning grounds for multiple projects and events, resulting in the birth of one of Boston’s most thriving organizations.</p>
-    log in to check out some ROC activities and events and please add or make edits to the events...<li class='nav'><a href='/login'>Login</a></li>
+    log in to check out some ROC activities and events and please add or make edits to the events..
   </div>
 
 @stop

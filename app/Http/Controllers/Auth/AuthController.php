@@ -26,14 +26,14 @@ class AuthController extends Controller
     protected $loginPath = '/login';
 
     # Where should the user be redirected to after logging out?
-    protected $redirectAfterLogout = '/';
+    protected $redirectAfterLogout = '/events';
 
     /**
      * Where to redirect users after login / registration.
      *
      * @var string
      */
-    protected $redirectTo = '/events';
+    protected $redirectTo = '/';
 
     /**
      * Create a new authentication controller instance.
